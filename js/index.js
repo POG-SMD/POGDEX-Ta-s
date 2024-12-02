@@ -15,7 +15,8 @@ async function gerarPokemon(num) {
         const card = document.getElementById('card')
         const h2 = document.getElementById('title')
         const pokemon = await gerarPokemon(1)
-        h2.textContent = pokemon.name
+        h2.textContent = await pokemon.name
         card.setAttribute('src', pokemon.sprite)
-    }
+  }
     setPokemonImg()
+   
